@@ -62,13 +62,13 @@ const Product = ({ match }) => {
               +
             </button>
           </div>
+          {isProductAdded ?<Link to='/cart'><p className="mt-3">Go to cart..</p></Link> : null}
           <button
             className="btn btn-lg btn-primary"
             onClick={handleAddToCart}
           >
             {isProductAdded ? "Item added to cart" : "Add to cart"}
           </button>
-          {isProductAdded ?<Link to='/cart'><p className="mt-3">Go to cart..</p></Link> : null}
         </div>
       </div>
     </div>
