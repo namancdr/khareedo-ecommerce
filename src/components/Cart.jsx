@@ -41,7 +41,8 @@ const Cart = () => {
       ) : (
         <div>
           <div className="total container d-flex align-items-center p-2">
-            <h5>Your total cart value is: ${calculateTotal(cartItems)}</h5>
+            <h5 className="me-auto">Your total cart value is: ${calculateTotal(cartItems)}</h5>
+            <button className="btn btn-primary btn-lg" onClick={ () => alert('Thankyou for shopping with us')}>checkout</button>
           </div>
           {cartItems.map((item) => (
             <div key={item.id} className="mt-4">
